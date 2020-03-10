@@ -1,0 +1,391 @@
+@import "vars";
+@import "mixin";
+@media (min-width: 320px) {
+    .container {
+        max-width: 320px;
+      }
+    .header{
+        background: linear-gradient(180deg,rgba(#000,.3), rgba(#fff,0));
+        // background: rgba(#000, .5);
+    }
+    .nav{
+        display: none;
+    }
+    //   Main
+    .main{
+        min-height: 800px;
+    }
+    .main__content{
+        width: 100%;
+        padding-top: 120px;
+        text-align: center;
+        h1{
+            font-size: 34px;
+            line-height: 34px;
+        }
+        p{
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+    .ul{
+        display: none;
+    }
+    .main__client{
+        display: none;
+    }
+    .product{
+        display: none;
+    }
+    .buy__now{
+        top: auto;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    //   End Main
+
+    // Section symptom
+    .symptom{
+        padding: 50px 0;
+        
+    }
+    .symptoms{
+        background-position: left;
+    }
+    .symptoms__foto{
+        display: none;
+    }
+    .section__header{
+        width: auto;
+        padding-bottom: 0;
+        h2{
+        font-size: 30px;
+        }
+    }
+    .symptoms__all{
+        width: 100%;
+    }
+    .symptoms__content{
+        width: calc(100% - 90px);
+        h6{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .warning{
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+    .warning__content{
+        width: calc(100% - 90px);
+        margin: 0;
+    }
+    // End Section symptom
+
+    // Section pantoflex
+    .pantoflex{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        h2{
+            margin: 20px 0;
+            font-size: 40px;
+        }
+        p{
+            width: auto;
+            font-size: 20px;
+        }
+    }
+    .pantoflex__content .btn {
+        margin: 30px auto;
+    }
+    // End Section pantoflex
+
+    // Section compound
+    .about{
+        padding-top: 50px;
+    }
+    .compound{
+        display: block;
+        &__general{
+            text-align: center;
+            h2{
+                font-size: 30px;
+            }
+            &-img{
+                display: none;
+            }
+        }
+        &__content{
+            margin-top: 50px;
+        }
+    }
+    .box{
+        width: 100%;
+        text-align: center;
+    }
+    // End Section compound
+}
+
+@media (min-width: 480px) {
+    .container {
+      max-width: 480px;
+    }
+    .logo__name{
+        margin-left: 20px;
+    }
+    .buy__now{
+        bottom: 45px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    // Section main
+    .main{
+        min-height: 600px;
+    }
+    .main__content{
+        width: 50%;
+        text-align: left;
+    }
+    .ul{
+        display: block;
+    }
+    
+    .list{
+        justify-content: space-between;
+        &__content{
+            width: calc(100% - 30px);
+            font-size: 16px;
+
+        }
+    }
+    .buy__now{
+        top: 120px;
+        bottom: auto;
+        right: 0;
+        left: auto;
+        transform: none;
+    }
+    // End Section main
+
+}
+  
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .header{
+        background: rgba(#000, .0);
+    }
+    .nav{
+        display: flex;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    
+    .main{
+        max-height: 700px;
+    }
+    .box{
+        width: 50%;
+        padding: 0 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    //   Main
+    .main{
+        min-height: 800px;
+        max-height: 800px;
+    }
+    .main__content{
+        width: 400px;
+        padding-top: 120px;
+        h1{
+            font-size: 64px;
+            line-height: 64px;
+        }
+        p{
+            font-size: 34px;
+            line-height: 34px;
+        }
+    }
+    .main__client{
+        display: block;
+    }
+    .product{
+        display: block;
+    }
+    //   End Main
+
+    // Section Symptom
+    .symptom{
+        padding: 126px 0 179px;
+    }
+    // End Section Symptom
+
+    // Section Pantoflex 
+    .pantoflex{
+        padding-top: 41px;
+        text-align: left;
+        .container{
+          position: relative;
+        }
+        &__content{
+          h2{
+            margin-bottom: 30px;
+            font-size: 60px;
+          }
+          p{
+            width: 499px;
+            font-family: $robotoRegular;
+            font-size: 28px;
+          }
+          .btn{
+            margin-left: 0;
+          }
+        }
+        .product{
+            bottom: 50px;
+            left: 0;
+            margin-left: 445px;
+          }
+          .product__two {
+            bottom: -120px;
+          }
+      }
+      
+      .about{
+        padding-top: 177px;
+      }
+    // Section Pantoflex 
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+    //   Main
+    .main{
+        min-height: 750px;
+        max-height: 800px;
+    }
+    .main__content{
+        width: 500px;
+        padding-top: 172px;
+    }
+    .main__client{
+        display: flex;
+    }
+    .product{
+        display: block;
+    }
+    .buy__now{
+        top: 172px;
+    }
+    //   End Main
+
+    // Section symptoms
+  .section__header{
+    width: 855px;
+    h2{
+      font-size: 49px;
+    }
+    span{
+      color: #f56856;
+    }
+  }
+  .symptoms{
+    background-position: right;
+    &__all{
+      width: 611px;
+      padding-top: 82px;
+    }
+    &__content{
+      width: 488px;
+      h6{
+        font-size: 32px;
+        line-height: 32px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+    &__foto{
+        display: block;
+    }
+  }
+  
+  .warning{
+        margin-top: 93px;
+        justify-content: normal;
+        &__content{
+            margin-left: 53px;
+            width: 397px;
+        }
+    }
+  // End Section symptoms
+
+  // Section Pantoflex 
+  .pantoflex__content p{
+      width: 599px;
+  }
+
+  .pantoflex .product{
+    bottom: 40px;
+    margin-left: 655px;
+  }
+  // End Section Pantoflex 
+
+  .compound{
+    @include display(flex, space-between);
+    &__general{
+        width: 530px;
+        margin-right: 97px;
+        text-align: left;
+        h2{
+        font-family: $robotoBold;
+        font-size: 51.47px;
+        color: #2e2c35;
+            span{
+                color: $mainColor;
+                letter-spacing: .01em;
+            }
+        }
+        &-img{
+            display: block;
+        }
+    }
+
+    &__content{
+        margin-top: 0;
+        width: 572px;
+    }
+  }
+  
+  .box{
+    margin-bottom: 44px;
+    padding: 0;
+    @include size(50%, 390px);
+    width: 50%;
+    text-align: left;
+    &:nth-child(2n+1){
+        padding-right: 34.5px;
+    }
+    &:nth-child(2n){
+        padding-left: 34.5px;
+    }
+  }
+  // End Section compound
+}
